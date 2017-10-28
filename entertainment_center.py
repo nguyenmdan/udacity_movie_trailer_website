@@ -1,7 +1,7 @@
 import media
 import fresh_tomatoes
 
-#Movie() args are in format title, storyline, poster url, and youtube url
+# Movie() args are in format title, storyline, poster url, and youtube url
 
 annie_hall = media.Movie("Annie Hall",
 							" Neurotic New York comedian Alvy Singer falls in love with the ditzy Annie Hall.",
@@ -13,15 +13,12 @@ kill_bill = media.Movie("Kill Bill Vol 1 & Vol 2",
 						"https://i.pinimg.com/736x/64/82/ef/6482ef51ce0b437986ec477e0d46f30c--quentin-tarantino-tarantino-movies.jpg",
 						"https://www.youtube.com/watch?v=ot6C1ZKyiME")
 
-
-
-arsenic_and_old_lace = media.Movie("Arsenic and Old Lace", 
-									"A drama critic learns on his wedding day that his beloved maiden aunts are homicidal maniacs, and that insanity runs in his family.", 
-									"http://avalonlibrary.org/wp-content/uploads/2014/04/arsenic-and-old-lace.jpg", 
+arsenic_and_old_lace = media.Movie("Arsenic and Old Lace",
+									"A drama critic learns on his wedding day that his beloved maiden aunts are homicidal maniacs, and that insanity runs in his family.",
+									"http://avalonlibrary.org/wp-content/uploads/2014/04/arsenic-and-old-lace.jpg",
 									"https://www.youtube.com/watch?v=GCWBDwkhGN0")
 
-
+# All movies above are compiled into a list and passed onto open_movies_page()
 movies_list = [annie_hall, kill_bill, arsenic_and_old_lace]
-
 
 fresh_tomatoes.open_movies_page(movies_list)
